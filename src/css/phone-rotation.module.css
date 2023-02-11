@@ -1,0 +1,33 @@
+.screen-rotate-div{
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    background: #32373b;
+    top: 0px;
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+   
+}
+
+.phone-icon{
+    animation: phone_rotation 1.5s ease infinite alternate;
+}
+
+@keyframes phone_rotation {
+0% {
+    transform: rotate(-90deg);
+}
+30% {
+    transform: rotate(-90deg);
+}
+70% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}

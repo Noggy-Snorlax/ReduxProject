@@ -1,0 +1,95 @@
+:root {
+  --dark-color: #635bff;
+  --light-color: #80e9ff;
+}
+
+svg {
+  cursor: pointer;
+}
+
+#darkGroup {
+  fill: var(--dark-color);
+}
+#lightGroup {
+  fill: var(--light-color);
+}
+#dark1,
+#light1,
+#dark2 {
+  transition: all 1s ease;
+}
+#dark2 {
+  transform: translateX(-100%);
+}
+svg:hover #light1 {
+  transform: translateX(20%);
+}
+svg:hover #dark1 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+svg:hover #dark2 {
+  transform: translateX(0%);
+}
+
+
+.mySwiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .mySwiper{
+      height: 100%;
+  }
+  
+
+  .mySwiper2 .swiper {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+  }
+  
+  .mySwiper2 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .mySwiper2 .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+
+  .collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+  }
+  
+  .active, .collapsible:hover {
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+  
